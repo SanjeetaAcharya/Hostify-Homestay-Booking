@@ -1,0 +1,237 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "name": "Brightwoods Cabin",
+      "location": "Bridlepath, Ontario, Canada",
+      "price": 658,
+      "rating": 4.9,
+      "image": "https://picsum.photos/seed/cabin1/800/600",
+      "images": [
+        "https://picsum.photos/seed/cabin1/800/600",
+        "https://picsum.photos/seed/cabin1a/800/600",
+        "https://picsum.photos/seed/cabin1b/800/600",
+        "https://picsum.photos/seed/cabin1c/800/600"
+      ],
+      "description": "Welcome to our cozy cabin retreat nestled in the heart of Bridlepath, Ontario. Experience the perfect blend of rustic charm and modern comfort in this spacious two-bedroom cabin. Wake up to stunning lake views, enjoy your morning coffee on the private deck, and unwind by the fire pit under the stars.",
+      "host": {
+        "name": "Michelle Ward",
+        "joinedDate": "Joined in May 2021"
+      },
+      "amenities": ["Wifi", "Kitchen", "Free Parking", "Washer", "Dryer", "Hot tub", "Fire pit", "Lake access"],
+      "guests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "baths": 1
+    },
+    {
+      "id": 2,
+      "name": "Mistissippi Airstream",
+      "location": "Alyangula, Northern Territory, Australia",
+      "price": 302,
+      "rating": 4.7,
+      "image": "https://picsum.photos/seed/airstream2/800/600",
+      "images": ["https://picsum.photos/seed/airstream2/800/600", "https://picsum.photos/seed/airstream2a/800/600"],
+      "description": "Experience glamping at its finest in this vintage Airstream trailer. Perfect for couples seeking a unique getaway.",
+      "host": {
+        "name": "John Smith",
+        "joinedDate": "Joined in March 2020"
+      },
+      "amenities": ["Wifi", "Kitchen", "Free Parking", "Air conditioning"],
+      "guests": 2,
+      "bedrooms": 1,
+      "beds": 1,
+      "baths": 1
+    },
+    {
+      "id": 3,
+      "name": "Urban Loft",
+      "location": "Downtown, Seattle, USA",
+      "price": 425,
+      "rating": 4.8,
+      "image": "https://picsum.photos/seed/loft3/800/600",
+      "images": ["https://picsum.photos/seed/loft3/800/600", "https://picsum.photos/seed/loft3a/800/600"],
+      "description": "Modern loft in the heart of downtown with stunning city views.",
+      "host": {
+        "name": "Sarah Johnson",
+        "joinedDate": "Joined in January 2022"
+      },
+      "amenities": ["Wifi", "Kitchen", "Gym access", "Washer", "Dryer"],
+      "guests": 3,
+      "bedrooms": 1,
+      "beds": 2,
+      "baths": 1
+    },
+    {
+      "id": 4,
+      "name": "Tropical Art-Deco",
+      "location": "Miami Beach, Florida, USA",
+      "price": 325,
+      "rating": 4.6,
+      "image": "https://picsum.photos/seed/miami4/800/600",
+      "images": ["https://picsum.photos/seed/miami4/800/600"],
+      "description": "Colorful Art-Deco apartment steps from the beach.",
+      "host": {
+        "name": "Carlos Martinez",
+        "joinedDate": "Joined in July 2021"
+      },
+      "amenities": ["Wifi", "Kitchen", "Pool access", "Beach access"],
+      "guests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "baths": 2
+    },
+    {
+      "id": 5,
+      "name": "Windermere Muskoka",
+      "location": "Muskoka, Ontario, Canada",
+      "price": 512,
+      "rating": 4.9,
+      "image": "https://picsum.photos/seed/muskoka5/800/600",
+      "images": ["https://picsum.photos/seed/muskoka5/800/600"],
+      "description": "Luxurious lakefront cottage with private dock and hot tub.",
+      "host": {
+        "name": "Emily Chen",
+        "joinedDate": "Joined in April 2020"
+      },
+      "amenities": ["Wifi", "Kitchen", "Hot tub", "Waterfront", "Kayaks", "Fire pit"],
+      "guests": 6,
+      "bedrooms": 3,
+      "beds": 4,
+      "baths": 2
+    },
+    {
+      "id": 6,
+      "name": "Cozy Cottage",
+      "location": "Cotswolds, England, UK",
+      "price": 280,
+      "rating": 4.5,
+      "image": "https://picsum.photos/seed/cottage6/800/600",
+      "images": ["https://picsum.photos/seed/cottage6/800/600"],
+      "description": "Traditional stone cottage in the English countryside.",
+      "host": {
+        "name": "James Wilson",
+        "joinedDate": "Joined in September 2019"
+      },
+      "amenities": ["Wifi", "Kitchen", "Fireplace", "Garden"],
+      "guests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "baths": 1
+    },
+    {
+      "id": 7,
+      "name": "Emerald Lake Lodge",
+      "location": "Field, British Columbia, Canada",
+      "price": 589,
+      "rating": 5.0,
+      "image": "https://picsum.photos/seed/lodge7/800/600",
+      "images": ["https://picsum.photos/seed/lodge7/800/600"],
+      "description": "Mountain retreat with breathtaking views of Emerald Lake.",
+      "host": {
+        "name": "David Park",
+        "joinedDate": "Joined in June 2021"
+      },
+      "amenities": ["Wifi", "Kitchen", "Hot tub", "Mountain view", "Hiking trails"],
+      "guests": 5,
+      "bedrooms": 3,
+      "beds": 3,
+      "baths": 2
+    },
+    {
+      "id": 8,
+      "name": "Vintage Beach Home",
+      "location": "Byron Bay, NSW, Australia",
+      "price": 445,
+      "rating": 4.7,
+      "image": "https://picsum.photos/seed/beach8/800/600",
+      "images": ["https://picsum.photos/seed/beach8/800/600"],
+      "description": "Charming beach house with direct beach access.",
+      "host": {
+        "name": "Sophie Anderson",
+        "joinedDate": "Joined in February 2022"
+      },
+      "amenities": ["Wifi", "Kitchen", "Beach access", "Outdoor shower", "BBQ"],
+      "guests": 6,
+      "bedrooms": 3,
+      "beds": 3,
+      "baths": 2
+    },
+    {
+      "id": 9,
+      "name": "Surf Hills",
+      "location": "Santa Cruz, California, USA",
+      "price": 375,
+      "rating": 4.8,
+      "image": "https://picsum.photos/seed/surf9/800/600",
+      "images": ["https://picsum.photos/seed/surf9/800/600"],
+      "description": "Surf-side bungalow perfect for beach lovers.",
+      "host": {
+        "name": "Mike Rodriguez",
+        "joinedDate": "Joined in August 2020"
+      },
+      "amenities": ["Wifi", "Kitchen", "Surfboard storage", "Beach access"],
+      "guests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "baths": 1
+    },
+    {
+      "id": 10,
+      "name": "Oceanside Cottage",
+      "location": "Prince Edward Island, Canada",
+      "price": 289,
+      "rating": 4.6,
+      "image": "https://picsum.photos/seed/ocean10/800/600",
+      "images": ["https://picsum.photos/seed/ocean10/800/600"],
+      "description": "Peaceful oceanfront cottage with stunning sunsets.",
+      "host": {
+        "name": "Rachel MacDonald",
+        "joinedDate": "Joined in May 2019"
+      },
+      "amenities": ["Wifi", "Kitchen", "Ocean view", "Deck", "Fire pit"],
+      "guests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "baths": 1
+    },
+    {
+      "id": 11,
+      "name": "Brightwoods Estate",
+      "location": "Napa Valley, California, USA",
+      "price": 785,
+      "rating": 5.0,
+      "image": "https://picsum.photos/seed/estate11/800/600",
+      "images": ["https://picsum.photos/seed/estate11/800/600"],
+      "description": "Luxury vineyard estate with wine tasting experiences.",
+      "host": {
+        "name": "Victoria Stone",
+        "joinedDate": "Joined in October 2021"
+      },
+      "amenities": ["Wifi", "Kitchen", "Pool", "Wine cellar", "Vineyard tours"],
+      "guests": 8,
+      "bedrooms": 4,
+      "beds": 5,
+      "baths": 3
+    },
+    {
+      "id": 12,
+      "name": "Kanopolis Lake",
+      "location": "Kansas, USA",
+      "price": 195,
+      "rating": 4.4,
+      "image": "https://picsum.photos/seed/lake12/800/600",
+      "images": ["https://picsum.photos/seed/lake12/800/600"],
+      "description": "Rustic lakeside cabin perfect for fishing enthusiasts.",
+      "host": {
+        "name": "Tom Henderson",
+        "joinedDate": "Joined in March 2018"
+      },
+      "amenities": ["Wifi", "Kitchen", "Boat dock", "Fire pit", "Fishing gear"],
+      "guests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "baths": 1
+    }
+  ]
+}
