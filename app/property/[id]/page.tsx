@@ -111,9 +111,17 @@ export default async function PropertyDetailsPage({ params }: PropertyPageProps)
             {/* Map Section */}
             <div className="mb-6">
               <h2 className="text-xl font-semibold mb-4">Where you'll be</h2>
-              <div className="bg-gray-100 h-96 rounded-lg flex items-center justify-center">
-                <p className="text-gray-500">📍 Map placeholder - {property.location}</p>
-              </div>
+              <div className="h-96 rounded-lg overflow-hidden border border-gray-200">
+  <iframe
+    src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(property.location)}`}
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</div>
             </div>
           </div>
           
@@ -129,7 +137,7 @@ export default async function PropertyDetailsPage({ params }: PropertyPageProps)
                 <span className="text-lg">⭐ {property.rating}</span>
               </div>
               
-              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-semibold transition-colors mb-4">
+              <button className="w-full bg-orange-500 hover:bg-primary-hover text-white py-3 rounded-lg font-semibold transition-colors mb-4">
                 Reserve
               </button>
               
