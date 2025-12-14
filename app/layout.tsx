@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ 
+  subsets: ["latin"],
+  weight: ['300', '400', '500', '700', '900']
+});
 
 export const metadata: Metadata = {
   title: "Hostify - Find Your Perfect Stay",
@@ -18,12 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        <main className="min-h-screen bg-white">
-          {children}
-        </main>
-        <Footer />
+      <body className={roboto.className}>
+        <div className="overflow-x-auto">
+          <div style={{ minWidth: '1200px' }}>
+            <Header />
+            <main className="min-h-screen bg-white">
+              {children}
+            </main>
+          </div>
+        </div>
       </body>
     </html>
   );
