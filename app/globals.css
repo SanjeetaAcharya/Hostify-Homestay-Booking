@@ -12,7 +12,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Dark mode styles - ONLY applied when .dark class is present on HTML element */
 .dark {
   --background: #1a1a1a;
   --foreground: #ededed;
@@ -28,7 +27,6 @@ body {
   border-bottom-color: #404040;
 }
 
-/* Only apply dark styles to elements that explicitly request it with dark: classes */
 .dark .dark\:bg-gray-800 {
   background: #333333 !important;
 }
@@ -53,7 +51,6 @@ body {
   color: #8a8a8a !important;
 }
 
-/* Property cards and general elements */
 .dark .bg-white:not(.search-bar-element) {
   background: #262626 !important;
 }
@@ -127,7 +124,6 @@ body {
   border-color: #737373 !important;
 }
 
-/* Shadows in dark mode */
 .dark .shadow-xl,
 .dark .shadow-lg,
 .dark .shadow-md,
@@ -135,12 +131,10 @@ body {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.7), 0 4px 6px -2px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* Property cards in dark mode */
 .dark .border {
   border-color: #404040 !important;
 }
 
-/* Orange accents in dark mode */
 .dark .bg-orange-100 {
   background: #4a2c1a !important;
 }
@@ -157,12 +151,10 @@ body {
   background: #3a2515 !important;
 }
 
-/* Hero section gradient overlay in dark mode */
 .dark .bg-gradient-to-r.from-white {
   background: linear-gradient(to right, #1a1a1a, rgba(26, 26, 26, 0.9), transparent) !important;
 }
 
-/* Heart icon in property cards - white in dark mode */
 .dark svg.text-gray-900,
 .dark svg[class*="text-gray-900"] {
   color: #ffffff !important;
