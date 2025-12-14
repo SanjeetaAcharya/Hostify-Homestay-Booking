@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/useAuthStore'
@@ -60,8 +61,12 @@ export default function SignUpPage() {
           backgroundImage: "url('/images/auth-background.jpg')"
         }}
       >
-        <div className="bg-white rounded-2xl shadow-2xl p-10 max-w-md w-full mx-4 my-8">
-          {/* Logo */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-white rounded-2xl shadow-2xl p-10 max-w-md w-full mx-4 my-8"
+        >
           <div className="flex justify-center mb-6">
             <img 
               src="/images/hostify-logo.png" 
@@ -70,14 +75,11 @@ export default function SignUpPage() {
             />
           </div>
           
-          {/* Title */}
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">Create Account</h1>
           </div>
           
-          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-5">
-            {/* Email */}
             <div>
               <div className="relative">
                 <input
@@ -103,7 +105,6 @@ export default function SignUpPage() {
               )}
             </div>
             
-            {/* Password */}
             <div>
               <div className="relative">
                 <input
@@ -129,7 +130,6 @@ export default function SignUpPage() {
               )}
             </div>
             
-            {/* Confirm Password */}
             <div>
               <div className="relative">
                 <input
@@ -155,7 +155,6 @@ export default function SignUpPage() {
               )}
             </div>
             
-            {/* Submit Button */}
             <button 
               type="submit"
               className="w-full text-white py-3 rounded-lg font-semibold transition-colors hover:opacity-90"
@@ -165,7 +164,6 @@ export default function SignUpPage() {
             </button>
           </form>
           
-          {/* Divider */}
           <div className="mt-8">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
@@ -177,9 +175,7 @@ export default function SignUpPage() {
             </div>
           </div>
           
-          {/* Social Login */}
           <div className="mt-6 flex justify-center gap-6">
-            {/* Google */}
             <button type="button" className="flex flex-col items-center gap-2 hover:opacity-80 transition p-2">
               <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white">
                 <svg className="w-6 h-6" viewBox="0 0 24 24">
@@ -192,7 +188,6 @@ export default function SignUpPage() {
               <span className="text-xs text-gray-700">Google</span>
             </button>
             
-            {/* Facebook */}
             <button type="button" className="flex flex-col items-center gap-2 hover:opacity-80 transition p-2">
               <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1877F2' }}>
                 <svg className="w-6 h-6" fill="white" viewBox="0 0 24 24">
@@ -202,7 +197,6 @@ export default function SignUpPage() {
               <span className="text-xs text-gray-700">Facebook</span>
             </button>
             
-            {/* Apple */}
             <button type="button" className="flex flex-col items-center gap-2 hover:opacity-80 transition p-2">
               <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white">
                 <svg className="w-6 h-6" fill="black" viewBox="0 0 24 24">
@@ -213,14 +207,13 @@ export default function SignUpPage() {
             </button>
           </div>
           
-          {/* Login Link */}
           <p className="text-center mt-8 text-gray-600 text-sm">
             Already have an account?{' '}
             <Link href="/login" className="font-semibold hover:underline" style={{ color: '#FF8D28' }}>
               Log in
             </Link>
           </p>
-        </div>
+        </motion.div>
       </div>
       
       <Footer />

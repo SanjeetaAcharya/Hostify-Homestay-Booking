@@ -26,7 +26,6 @@ export default function PropertyCard({
   
   return (
     <div className="group cursor-pointer bg-white border border-gray-200 rounded-3xl overflow-hidden hover:shadow-md transition-shadow">
-      {/* Image Container */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <Link href={`/property/${id}`}>
           <Image 
@@ -38,7 +37,6 @@ export default function PropertyCard({
           />
         </Link>
         
-        {/* Superhost Badge - Only for first property */}
         {id === 1 && (
           <div className="absolute top-4 left-4 bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
             <span className="text-orange-500 text-sm">🔥</span>
@@ -46,26 +44,24 @@ export default function PropertyCard({
           </div>
         )}
         
-        {/* Like Button with White Circle Background */}
-<button 
-  onClick={(e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    toggleLike(id)
-  }}
-  className="absolute top-4 right-4 z-10 hover:scale-110 transition-transform bg-white rounded-full p-2 shadow-sm"
->
-  <Heart 
-    className={`w-5 h-5 ${
-      isLiked(id) 
-        ? 'fill-red-500 stroke-red-500' 
-        : 'fill-none stroke-gray-900'
-    } stroke-2`}
-  />
-</button>
+        <button 
+          onClick={(e) => {
+            e.preventDefault()
+            e.stopPropagation()
+            toggleLike(id)
+          }}
+          className="absolute top-4 right-4 z-10 hover:scale-110 transition-transform bg-white rounded-full p-2 shadow-sm"
+        >
+          <Heart 
+            className={`w-5 h-5 ${
+              isLiked(id) 
+                ? 'fill-red-500 stroke-red-500' 
+                : 'fill-none stroke-gray-900'
+            } stroke-2`}
+          />
+        </button>
       </div>
       
-      {/* Property Info */}
       <Link href={`/property/${id}`}>
         <div className="p-5 space-y-1.5">
           <div className="flex justify-between items-start gap-3">

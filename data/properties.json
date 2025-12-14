@@ -2,236 +2,909 @@
   "properties": [
     {
       "id": 1,
-      "name": "Brightwoods Cabin",
-      "location": "Bridlepath, Ontario, Canada",
-      "price": 658,
+      "name": "Lakeside Retreat Cabin",
+      "location": "Muskoka, Ontario",
+      "price": 285,
       "rating": 4.9,
-      "image": "https://picsum.photos/seed/cabin1/800/600",
+      "reviews": 156,
+      "image": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop",
       "images": [
-        "https://picsum.photos/seed/cabin1/800/600",
-        "https://picsum.photos/seed/cabin1a/800/600",
-        "https://picsum.photos/seed/cabin1b/800/600",
-        "https://picsum.photos/seed/cabin1c/800/600"
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&h=600&fit=crop"
       ],
-      "description": "Welcome to our cozy cabin retreat nestled in the heart of Bridlepath, Ontario. Experience the perfect blend of rustic charm and modern comfort in this spacious two-bedroom cabin. Wake up to stunning lake views, enjoy your morning coffee on the private deck, and unwind by the fire pit under the stars.",
-      "host": {
-        "name": "Michelle Ward",
-        "joinedDate": "Joined in May 2021"
+      "shortDescription": "Welcome to our cozy cabin retreat nestled in the heart of Muskoka, Ontario! Surrounded by pristine lakes and tranquil trails, this charming getaway offers the perfect blend of rustic elegance and modern comfort.",
+      "aboutHome": {
+        "intro": "Welcome to Lakeside Retreat Cabin, your idyllic retreat nestled in the heart of Muskoka, Ontario! Our cozy cabin, surrounded by the tranquility of nature, is designed to provide the ultimate relaxing getaway.",
+        "livingSpace": "This charming cabin boasts a spacious living area adorned with rustic decor and modern amenities. Enjoy the warmth of the wood-burning fireplace, relax on the plush sofas, and make yourself at home with our entertainment center featuring a flat-screen TV, WiFi, and more.",
+        "bedrooms": "With 3 beautifully appointed bedrooms, our cabin comfortably accommodates up to 6 guests. The master suite features a king-size bed with lake views, while the two additional bedrooms offer queen beds with premium linens for a restful night's sleep.",
+        "outdoor": "Step outside to your private deck overlooking the pristine lake. Perfect for morning coffee or evening cocktails. Direct lake access allows for swimming, kayaking, and fishing right from your doorstep.",
+        "kitchen": "The fully equipped kitchen features granite countertops, stainless steel appliances, and everything you need to prepare delicious meals during your stay.",
+        "additional": "Whether you're seeking adventure on the water, exploring nearby hiking trails, or simply relaxing by the fire, Lakeside Retreat Cabin is your perfect home away from home."
       },
-      "amenities": ["Wifi", "Kitchen", "Free Parking", "Washer", "Dryer", "Hot tub", "Fire pit", "Lake access"],
-      "guests": 4,
-      "bedrooms": 2,
-      "beds": 2,
-      "baths": 1
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Dedicated workspace",
+          "description": "A private room equipped with WiFi"
+        },
+        {
+          "icon": "checkin",
+          "title": "Self check-in",
+          "description": "Check in with just your phone"
+        },
+        {
+          "icon": "cancel",
+          "title": "Free cancellation",
+          "description": "Cancel anytime"
+        }
+      ],
+      "amenities": [
+        "Lakeside",
+        "Kitchen",
+        "WiFi",
+        "Free Parking",
+        "Hot water",
+        "Shampoo",
+        "Security cameras on property",
+        "Outdoor shower",
+        "Fire Extinguisher",
+        "Freezer",
+        "Coffee Maker",
+        "BBQ Grill",
+        "Fireplace",
+        "Lake Access",
+        "Heating",
+        "Towels",
+        "Bed linens",
+        "Iron"
+      ],
+      "host": {
+        "name": "Sarah Mitchell",
+        "joinedDate": "Joined in March 2021",
+        "superhost": true,
+        "initial": "S"
+      },
+      "guests": 6,
+      "bedrooms": 3,
+      "beds": 3,
+      "baths": 2,
+      "weather": {
+        "temp": "20°C",
+        "condition": "Broken clouds",
+        "icon": "☀️"
+      }
     },
     {
       "id": 2,
-      "name": "Mistissippi Airstream",
-      "location": "Alyangula, Northern Territory, Australia",
-      "price": 302,
-      "rating": 4.7,
-      "image": "https://picsum.photos/seed/airstream2/800/600",
-      "images": ["https://picsum.photos/seed/airstream2/800/600", "https://picsum.photos/seed/airstream2a/800/600"],
-      "description": "Experience glamping at its finest in this vintage Airstream trailer. Perfect for couples seeking a unique getaway.",
-      "host": {
-        "name": "John Smith",
-        "joinedDate": "Joined in March 2020"
+      "name": "Downtown Luxury Loft",
+      "location": "Toronto, Ontario",
+      "price": 420,
+      "rating": 4.8,
+      "reviews": 203,
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our sophisticated urban oasis in downtown Toronto! This stunning loft features floor-to-ceiling windows, designer furnishings, and breathtaking city views in the heart of the entertainment district.",
+      "aboutHome": {
+        "intro": "Welcome to Downtown Luxury Loft, your modern sanctuary in the heart of Toronto! This contemporary loft combines sleek design with ultimate comfort, offering unparalleled city views and premium amenities.",
+        "livingSpace": "The open-concept living space features soaring 14-foot ceilings and floor-to-ceiling windows with panoramic city views. Designer furnishings throughout create an atmosphere of sophisticated comfort. Relax on the plush sectional sofa while enjoying the 65-inch smart TV with streaming services.",
+        "bedrooms": "With 2 elegantly designed bedrooms, this loft comfortably accommodates up to 4 guests. The master bedroom features a California king bed and spa-like ensuite bathroom with a soaking tub and rainfall shower. The second bedroom offers a queen bed with premium linens.",
+        "kitchen": "The gourmet kitchen is a chef's dream, featuring stainless steel appliances, marble countertops, and a spacious island perfect for entertaining. Fully stocked with high-end cookware and utensils.",
+        "location": "Located in the heart of downtown Toronto, you're walking distance to top restaurants, Rogers Centre, CN Tower, and the vibrant entertainment district. Experience the best of urban living!",
+        "additional": "Building amenities include a state-of-the-art gym, concierge service, and secure underground parking. High-speed WiFi throughout ensures you stay connected during your stay."
       },
-      "amenities": ["Wifi", "Kitchen", "Free Parking", "Air conditioning"],
-      "guests": 2,
-      "bedrooms": 1,
-      "beds": 1,
-      "baths": 1
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Dedicated workspace",
+          "description": "High-speed WiFi and desk area"
+        },
+        {
+          "icon": "checkin",
+          "title": "Self check-in",
+          "description": "Keyless entry system"
+        },
+        {
+          "icon": "cancel",
+          "title": "Flexible cancellation",
+          "description": "Full refund 48 hours before"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Gym Access",
+        "Washer/Dryer",
+        "City View",
+        "Smart TV",
+        "Heating",
+        "Air conditioning",
+        "Coffee Maker",
+        "Dishwasher",
+        "Elevator",
+        "Doorman",
+        "Iron",
+        "Hair dryer",
+        "Hangers",
+        "Workspace"
+      ],
+      "host": {
+        "name": "Michael Chen",
+        "joinedDate": "Joined in June 2020",
+        "superhost": true,
+        "initial": "M"
+      },
+      "guests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "baths": 2,
+      "weather": {
+        "temp": "18°C",
+        "condition": "Partly cloudy",
+        "icon": "⛅"
+      }
     },
     {
       "id": 3,
-      "name": "Urban Loft",
-      "location": "Downtown, Seattle, USA",
-      "price": 425,
-      "rating": 4.8,
-      "image": "https://picsum.photos/seed/loft3/800/600",
-      "images": ["https://picsum.photos/seed/loft3/800/600", "https://picsum.photos/seed/loft3a/800/600"],
-      "description": "Modern loft in the heart of downtown with stunning city views.",
-      "host": {
-        "name": "Sarah Johnson",
-        "joinedDate": "Joined in January 2022"
+      "name": "Cozy Beach Cottage",
+      "location": "Wasaga Beach, Ontario",
+      "price": 195,
+      "rating": 4.7,
+      "reviews": 128,
+      "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our charming beach cottage just steps from the sandy shores of Wasaga Beach! This cozy retreat features a private deck, outdoor shower, and beachy vibes throughout - perfect for summer getaways.",
+      "aboutHome": {
+        "intro": "Welcome to Cozy Beach Cottage, your perfect summer escape in Wasaga Beach! Just steps from the sandy shores, this charming cottage is designed for those seeking sun, sand, and relaxation.",
+        "livingSpace": "The bright and airy living space features coastal-inspired decor with comfortable seating and large windows that fill the space with natural light. Enjoy beach views from the living room and easy access to the outdoor deck.",
+        "bedrooms": "With 2 comfortable bedrooms, this cottage accommodates up to 4 guests. The master bedroom has a queen bed with beach views, and the second bedroom features two twin beds - perfect for kids or friends.",
+        "outdoor": "The private deck is your outdoor sanctuary, featuring comfortable lounge chairs, a dining table for al fresco meals, and an outdoor shower for rinsing off after beach days. The fire pit area is perfect for evening gatherings.",
+        "beach": "Direct beach access means you're just a short walk from the sand! Spend your days swimming, sunbathing, building sandcastles, or exploring the longest freshwater beach in the world.",
+        "additional": "Wasaga Beach offers endless activities including water sports, beach volleyball, local shops, and restaurants. After sunset, gather around the fire pit and make memories under the stars."
       },
-      "amenities": ["Wifi", "Kitchen", "Gym access", "Washer", "Dryer"],
-      "guests": 3,
-      "bedrooms": 1,
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Beach essentials provided",
+          "description": "Towels, chairs, and umbrellas"
+        },
+        {
+          "icon": "checkin",
+          "title": "Self check-in",
+          "description": "Lockbox entry"
+        },
+        {
+          "icon": "cancel",
+          "title": "Free cancellation",
+          "description": "Cancel anytime"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Beach Access",
+        "Outdoor Shower",
+        "Parking",
+        "Fire Pit",
+        "BBQ Grill",
+        "Patio",
+        "Beach chairs",
+        "Cooler",
+        "Coffee Maker",
+        "Microwave",
+        "Hot water",
+        "Shampoo",
+        "Towels",
+        "Bed linens"
+      ],
+      "host": {
+        "name": "Emma Thompson",
+        "joinedDate": "Joined in May 2019",
+        "superhost": false,
+        "initial": "E"
+      },
+      "guests": 4,
+      "bedrooms": 2,
       "beds": 2,
-      "baths": 1
+      "baths": 1,
+      "weather": {
+        "temp": "25°C",
+        "condition": "Sunny",
+        "icon": "☀️"
+      }
     },
     {
       "id": 4,
-      "name": "Tropical Art-Deco",
-      "location": "Miami Beach, Florida, USA",
-      "price": 325,
-      "rating": 4.6,
-      "image": "https://picsum.photos/seed/miami4/800/600",
-      "images": ["https://picsum.photos/seed/miami4/800/600"],
-      "description": "Colorful Art-Deco apartment steps from the beach.",
-      "host": {
-        "name": "Carlos Martinez",
-        "joinedDate": "Joined in July 2021"
-      },
-      "amenities": ["Wifi", "Kitchen", "Pool access", "Beach access"],
-      "guests": 4,
-      "bedrooms": 2,
-      "beds": 2,
-      "baths": 2
-    },
-    {
-      "id": 5,
-      "name": "Windermere Muskoka",
-      "location": "Muskoka, Ontario, Canada",
-      "price": 512,
+      "name": "Mountain View Chalet",
+      "location": "Blue Mountains, Ontario",
+      "price": 380,
       "rating": 4.9,
-      "image": "https://picsum.photos/seed/muskoka5/800/600",
-      "images": ["https://picsum.photos/seed/muskoka5/800/600"],
-      "description": "Luxurious lakefront cottage with private dock and hot tub.",
-      "host": {
-        "name": "Emily Chen",
-        "joinedDate": "Joined in April 2020"
+      "reviews": 187,
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our stunning mountain chalet with panoramic views in Blue Mountains! This luxury four-season retreat features a private hot tub, stone fireplace, and proximity to world-class skiing and hiking.",
+      "aboutHome": {
+        "intro": "Welcome to Mountain View Chalet, your luxurious four-season retreat in the Blue Mountains! This stunning chalet combines rustic charm with modern luxury, offering breathtaking mountain views and premium amenities.",
+        "livingSpace": "The grand living area features vaulted ceilings with exposed wooden beams, a floor-to-ceiling stone fireplace, and expansive windows showcasing panoramic mountain views. Comfortable leather sofas and a 75-inch smart TV create the perfect space for gathering after a day of adventure.",
+        "bedrooms": "With 4 spacious bedrooms, this chalet comfortably accommodates up to 8 guests. The master suite features a king bed, ensuite bathroom with jetted tub, and private balcony with mountain views. Three additional bedrooms offer queen and twin beds with luxury linens.",
+        "kitchen": "The gourmet kitchen is fully equipped with high-end stainless steel appliances, granite countertops, and a large island with bar seating. Perfect for preparing hearty meals after days on the slopes.",
+        "outdoor": "The private hot tub on the deck is your personal spa with stunning mountain views. In winter, watch the snow fall while you soak. In summer, enjoy the fresh mountain air and sunset views.",
+        "activities": "Located minutes from Blue Mountain Resort, enjoy world-class skiing and snowboarding in winter, or explore hiking trails, mountain biking, and the village in summer. Year-round adventure awaits!",
+        "additional": "Ski storage, boot drying room, and laundry facilities make this chalet perfect for extended stays. High-speed WiFi keeps you connected when needed."
       },
-      "amenities": ["Wifi", "Kitchen", "Hot tub", "Waterfront", "Kayaks", "Fire pit"],
-      "guests": 6,
-      "bedrooms": 3,
-      "beds": 4,
-      "baths": 2
-    },
-    {
-      "id": 6,
-      "name": "Cozy Cottage",
-      "location": "Cotswolds, England, UK",
-      "price": 280,
-      "rating": 4.5,
-      "image": "https://picsum.photos/seed/cottage6/800/600",
-      "images": ["https://picsum.photos/seed/cottage6/800/600"],
-      "description": "Traditional stone cottage in the English countryside.",
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Ski-in location",
+          "description": "Minutes from lifts and village"
+        },
+        {
+          "icon": "checkin",
+          "title": "Self check-in",
+          "description": "Smart lock entry"
+        },
+        {
+          "icon": "cancel",
+          "title": "Free cancellation",
+          "description": "48 hours before arrival"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Hot Tub",
+        "Fireplace",
+        "Mountain View",
+        "Ski Storage",
+        "Washer/Dryer",
+        "Heating",
+        "BBQ Grill",
+        "Patio",
+        "Smart TV",
+        "Coffee Maker",
+        "Dishwasher",
+        "Parking",
+        "Boot dryer",
+        "Game room",
+        "Sound system"
+      ],
       "host": {
-        "name": "James Wilson",
-        "joinedDate": "Joined in September 2019"
+        "name": "David Wilson",
+        "joinedDate": "Joined in November 2020",
+        "superhost": true,
+        "initial": "D"
       },
-      "amenities": ["Wifi", "Kitchen", "Fireplace", "Garden"],
-      "guests": 4,
-      "bedrooms": 2,
-      "beds": 2,
-      "baths": 1
-    },
-    {
-      "id": 7,
-      "name": "Emerald Lake Lodge",
-      "location": "Field, British Columbia, Canada",
-      "price": 589,
-      "rating": 5.0,
-      "image": "https://picsum.photos/seed/lodge7/800/600",
-      "images": ["https://picsum.photos/seed/lodge7/800/600"],
-      "description": "Mountain retreat with breathtaking views of Emerald Lake.",
-      "host": {
-        "name": "David Park",
-        "joinedDate": "Joined in June 2021"
-      },
-      "amenities": ["Wifi", "Kitchen", "Hot tub", "Mountain view", "Hiking trails"],
-      "guests": 5,
-      "bedrooms": 3,
-      "beds": 3,
-      "baths": 2
-    },
-    {
-      "id": 8,
-      "name": "Vintage Beach Home",
-      "location": "Byron Bay, NSW, Australia",
-      "price": 445,
-      "rating": 4.7,
-      "image": "https://picsum.photos/seed/beach8/800/600",
-      "images": ["https://picsum.photos/seed/beach8/800/600"],
-      "description": "Charming beach house with direct beach access.",
-      "host": {
-        "name": "Sophie Anderson",
-        "joinedDate": "Joined in February 2022"
-      },
-      "amenities": ["Wifi", "Kitchen", "Beach access", "Outdoor shower", "BBQ"],
-      "guests": 6,
-      "bedrooms": 3,
-      "beds": 3,
-      "baths": 2
-    },
-    {
-      "id": 9,
-      "name": "Surf Hills",
-      "location": "Santa Cruz, California, USA",
-      "price": 375,
-      "rating": 4.8,
-      "image": "https://picsum.photos/seed/surf9/800/600",
-      "images": ["https://picsum.photos/seed/surf9/800/600"],
-      "description": "Surf-side bungalow perfect for beach lovers.",
-      "host": {
-        "name": "Mike Rodriguez",
-        "joinedDate": "Joined in August 2020"
-      },
-      "amenities": ["Wifi", "Kitchen", "Surfboard storage", "Beach access"],
-      "guests": 4,
-      "bedrooms": 2,
-      "beds": 2,
-      "baths": 1
-    },
-    {
-      "id": 10,
-      "name": "Oceanside Cottage",
-      "location": "Prince Edward Island, Canada",
-      "price": 289,
-      "rating": 4.6,
-      "image": "https://picsum.photos/seed/ocean10/800/600",
-      "images": ["https://picsum.photos/seed/ocean10/800/600"],
-      "description": "Peaceful oceanfront cottage with stunning sunsets.",
-      "host": {
-        "name": "Rachel MacDonald",
-        "joinedDate": "Joined in May 2019"
-      },
-      "amenities": ["Wifi", "Kitchen", "Ocean view", "Deck", "Fire pit"],
-      "guests": 4,
-      "bedrooms": 2,
-      "beds": 2,
-      "baths": 1
-    },
-    {
-      "id": 11,
-      "name": "Brightwoods Estate",
-      "location": "Napa Valley, California, USA",
-      "price": 785,
-      "rating": 5.0,
-      "image": "https://picsum.photos/seed/estate11/800/600",
-      "images": ["https://picsum.photos/seed/estate11/800/600"],
-      "description": "Luxury vineyard estate with wine tasting experiences.",
-      "host": {
-        "name": "Victoria Stone",
-        "joinedDate": "Joined in October 2021"
-      },
-      "amenities": ["Wifi", "Kitchen", "Pool", "Wine cellar", "Vineyard tours"],
       "guests": 8,
       "bedrooms": 4,
       "beds": 5,
-      "baths": 3
+      "baths": 3,
+      "weather": {
+        "temp": "15°C",
+        "condition": "Clear sky",
+        "icon": "🌤️"
+      }
     },
     {
-      "id": 12,
-      "name": "Kanopolis Lake",
-      "location": "Kansas, USA",
-      "price": 195,
-      "rating": 4.4,
-      "image": "https://picsum.photos/seed/lake12/800/600",
-      "images": ["https://picsum.photos/seed/lake12/800/600"],
-      "description": "Rustic lakeside cabin perfect for fishing enthusiasts.",
-      "host": {
-        "name": "Tom Henderson",
-        "joinedDate": "Joined in March 2018"
+      "id": 5,
+      "name": "Niagara Wine Country Estate",
+      "location": "Niagara-on-the-Lake, Ontario",
+      "price": 650,
+      "rating": 5.0,
+      "reviews": 94,
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our elegant wine country estate surrounded by rolling vineyards in Niagara-on-the-Lake! This luxury property features a gourmet kitchen, wine cellar, heated pool, and private vineyard tours.",
+      "aboutHome": {
+        "intro": "Welcome to Niagara Wine Country Estate, your exclusive retreat in the heart of Ontario's premier wine region! This elegant estate is surrounded by lush vineyards and offers an unparalleled luxury experience.",
+        "livingSpace": "The grand living room features soaring ceilings, a marble fireplace, and French doors opening to the terrace with vineyard views. Elegant furnishings and artwork create a sophisticated atmosphere perfect for romantic getaways or special celebrations.",
+        "bedrooms": "With 3 luxurious bedrooms, this estate accommodates up to 6 guests in ultimate comfort. The master suite features a king bed, walk-in closet, spa bathroom with soaking tub, and private balcony overlooking the vineyards. Two additional guest rooms offer queen beds and ensuite bathrooms.",
+        "kitchen": "The gourmet kitchen is a culinary masterpiece with top-of-the-line appliances, custom cabinetry, and a butler's pantry. The wine cellar houses an impressive collection and tasting area for private wine experiences.",
+        "outdoor": "The estate grounds feature a heated saltwater pool, outdoor dining pavilion, and manicured gardens. Relax on the terrace with a glass of local wine while watching the sunset over the vineyards.",
+        "wine": "As our guest, enjoy complimentary access to private vineyard tours and wine tastings at select partner wineries. The estate is surrounded by world-renowned wineries, fine dining restaurants, and the charming historic town of Niagara-on-the-Lake.",
+        "additional": "Perfect for romantic escapes, wine enthusiast getaways, or intimate celebrations. Concierge services available to arrange private chef experiences, spa treatments, and exclusive winery visits."
       },
-      "amenities": ["Wifi", "Kitchen", "Boat dock", "Fire pit", "Fishing gear"],
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Wine experiences included",
+          "description": "Private tastings and tours"
+        },
+        {
+          "icon": "checkin",
+          "title": "Concierge check-in",
+          "description": "Personal welcome and tour"
+        },
+        {
+          "icon": "cancel",
+          "title": "Flexible cancellation",
+          "description": "72 hours before arrival"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Pool",
+        "Wine Cellar",
+        "Fireplace",
+        "Private Garden",
+        "Hot Tub",
+        "Patio",
+        "BBQ Grill",
+        "Vineyard View",
+        "Air conditioning",
+        "Heating",
+        "Washer/Dryer",
+        "Smart TV",
+        "Sound system",
+        "Parking",
+        "Wine glasses",
+        "Decanter"
+      ],
+      "host": {
+        "name": "Isabella Romano",
+        "joinedDate": "Joined in February 2021",
+        "superhost": true,
+        "initial": "I"
+      },
+      "guests": 6,
+      "bedrooms": 3,
+      "beds": 4,
+      "baths": 3,
+      "weather": {
+        "temp": "22°C",
+        "condition": "Partly cloudy",
+        "icon": "⛅"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Historic Downtown Apartment",
+      "location": "Ottawa, Ontario",
+      "price": 165,
+      "rating": 4.6,
+      "reviews": 142,
+      "image": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our charming apartment in historic downtown Ottawa! Walking distance to Parliament Hill, world-class museums, and ByWard Market. Perfect for exploring Canada's vibrant capital city.",
+      "aboutHome": {
+        "intro": "Welcome to Historic Downtown Apartment, your cozy home base for exploring Ottawa! Located in the heart of the capital, this charming apartment puts you within walking distance of Parliament Hill, museums, and the famous ByWard Market.",
+        "livingSpace": "This bright and inviting apartment features original hardwood floors, high ceilings, and large windows with city views. The comfortable living area includes a plush sofa, smart TV, and a workspace perfect for remote work or planning your daily adventures.",
+        "bedrooms": "The peaceful bedroom offers a comfortable queen bed with premium linens and blackout curtains for restful sleep. A spacious closet provides ample storage for your belongings.",
+        "kitchen": "The fully equipped kitchen has everything you need to prepare meals, including modern appliances, cookware, and a coffee maker for your morning brew. Enjoy meals at the dining table or grab takeout from nearby restaurants.",
+        "location": "You're just minutes from Parliament Hill, the National Gallery, Rideau Canal, and ByWard Market's restaurants, shops, and nightlife. Perfect for business travelers, solo adventurers, or couples exploring the capital.",
+        "additional": "In-unit WiFi keeps you connected, and heating ensures comfort year-round. Easy access to public transit makes exploring Ottawa effortless. Street parking available nearby."
+      },
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Dedicated workspace",
+          "description": "Desk and high-speed WiFi"
+        },
+        {
+          "icon": "checkin",
+          "title": "Self check-in",
+          "description": "Lockbox entry"
+        },
+        {
+          "icon": "cancel",
+          "title": "Free cancellation",
+          "description": "24 hours before"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Workspace",
+        "Heating",
+        "Coffee Maker",
+        "Smart TV",
+        "Iron",
+        "Hair dryer",
+        "Hangers",
+        "Shampoo",
+        "Hot water",
+        "Microwave",
+        "Dishes",
+        "City view",
+        "Towels",
+        "Bed linens"
+      ],
+      "host": {
+        "name": "Jean-Pierre Dubois",
+        "joinedDate": "Joined in August 2019",
+        "superhost": false,
+        "initial": "J"
+      },
+      "guests": 2,
+      "bedrooms": 1,
+      "beds": 1,
+      "baths": 1,
+      "weather": {
+        "temp": "17°C",
+        "condition": "Overcast",
+        "icon": "☁️"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Luxury Waterfront Condo",
+      "location": "Toronto, Ontario",
+      "price": 525,
+      "rating": 4.9,
+      "reviews": 176,
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our stunning waterfront condo with breathtaking views of Lake Ontario! This luxury property features floor-to-ceiling windows, high-end finishes, concierge service, and rooftop terrace access.",
+      "aboutHome": {
+        "intro": "Welcome to Luxury Waterfront Condo, your premium lakeside retreat in Toronto! This stunning condo offers unparalleled views of Lake Ontario and the Toronto skyline, combined with five-star amenities and sophisticated design.",
+        "livingSpace": "The open-concept living space features floor-to-ceiling windows showcasing spectacular lake views. Modern furnishings, designer lighting, and a 65-inch smart TV create an atmosphere of contemporary luxury. The private balcony extends your living space outdoors.",
+        "bedrooms": "With 2 elegant bedrooms, this condo accommodates up to 4 guests. The master suite features a king bed, walk-in closet, and spa-inspired ensuite with a deep soaking tub and separate rain shower. The second bedroom offers a queen bed and ensuite bathroom.",
+        "kitchen": "The gourmet kitchen features top-of-the-line stainless steel appliances, quartz countertops, and custom cabinetry. Fully equipped for any culinary adventure, from morning coffee to elaborate dinners.",
+        "building": "Enjoy world-class building amenities including a state-of-the-art fitness center, indoor pool, sauna, rooftop terrace with BBQs and lounge areas, 24/7 concierge service, and underground parking. Security and comfort are paramount.",
+        "location": "Located in Toronto's desirable waterfront district, you're steps from Harbourfront, Queens Quay, restaurants, shopping, and entertainment. Easy access to downtown attractions and transit.",
+        "additional": "Perfect for business travelers, romantic getaways, or anyone seeking a luxury Toronto experience. High-speed WiFi, in-suite laundry, and smart home features ensure modern convenience."
+      },
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Premium building amenities",
+          "description": "Gym, pool, and rooftop terrace"
+        },
+        {
+          "icon": "checkin",
+          "title": "Concierge check-in",
+          "description": "24/7 front desk service"
+        },
+        {
+          "icon": "cancel",
+          "title": "Flexible cancellation",
+          "description": "48 hours notice"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Gym",
+        "Pool",
+        "Concierge",
+        "Lake View",
+        "Balcony",
+        "Washer/Dryer",
+        "Air conditioning",
+        "Heating",
+        "Dishwasher",
+        "Coffee Maker",
+        "Smart TV",
+        "Parking",
+        "Elevator",
+        "Iron",
+        "Hair dryer",
+        "Rooftop access"
+      ],
+      "host": {
+        "name": "Amanda Park",
+        "joinedDate": "Joined in January 2022",
+        "superhost": true,
+        "initial": "A"
+      },
       "guests": 4,
       "bedrooms": 2,
       "beds": 2,
-      "baths": 1
+      "baths": 2,
+      "weather": {
+        "temp": "19°C",
+        "condition": "Clear",
+        "icon": "☀️"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Rustic Farmhouse Retreat",
+      "location": "Prince Edward County, Ontario",
+      "price": 225,
+      "rating": 4.8,
+      "reviews": 167,
+      "image": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our beautifully restored farmhouse on 10 acres of rolling countryside in Prince Edward County! Close to award-winning wineries, sandy beaches, and charming villages.",
+      "aboutHome": {
+        "intro": "Welcome to Rustic Farmhouse Retreat, your peaceful escape in Prince Edward County! This beautifully restored 1890s farmhouse sits on 10 acres of rolling countryside, offering the perfect blend of historic charm and modern comfort.",
+        "livingSpace": "The spacious living room features original wood beams, a stone fireplace, and comfortable furnishings that invite relaxation. Large windows overlook the gardens and fields, filling the space with natural light. Enjoy board games, books, or gather around the fireplace for cozy evenings.",
+        "bedrooms": "With 3 charming bedrooms, this farmhouse accommodates up to 6 guests. Each room has been thoughtfully restored with period details, comfortable beds, and quality linens. Wake up to birdsong and country views.",
+        "kitchen": "The farmhouse kitchen combines vintage charm with modern appliances. Cook farm-to-table meals with produce from local markets or your own garden herbs. The large farmhouse table seats 8 for memorable family dinners.",
+        "outdoor": "Ten acres of private land invite exploration. Stroll through wildflower meadows, relax in the garden, or gather around the fire pit under the stars. Pet-friendly property with plenty of space for your furry friends to roam.",
+        "county": "Prince Edward County is a hidden gem featuring award-winning wineries, farm-to-table restaurants, art galleries, sandy beaches, and charming villages. Explore the countryside by bike or car.",
+        "additional": "This is a true country retreat where you can disconnect from the hustle and reconnect with nature, family, and simple pleasures. WiFi available for those who need to stay connected."
+      },
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Pet friendly",
+          "description": "Bring your furry friends along"
+        },
+        {
+          "icon": "checkin",
+          "title": "Self check-in",
+          "description": "Lockbox on property"
+        },
+        {
+          "icon": "cancel",
+          "title": "Free cancellation",
+          "description": "Cancel anytime"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Fireplace",
+        "Garden",
+        "Free Parking",
+        "Pet Friendly",
+        "BBQ Grill",
+        "Fire Pit",
+        "Patio",
+        "Washer/Dryer",
+        "Coffee Maker",
+        "Heating",
+        "Hot water",
+        "Shampoo",
+        "Iron",
+        "Towels",
+        "Country views"
+      ],
+      "host": {
+        "name": "Robert & Linda Fraser",
+        "joinedDate": "Joined in April 2020",
+        "superhost": true,
+        "initial": "R"
+      },
+      "guests": 6,
+      "bedrooms": 3,
+      "beds": 4,
+      "baths": 2,
+      "weather": {
+        "temp": "21°C",
+        "condition": "Sunny",
+        "icon": "☀️"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Modern Lakeshore House",
+      "location": "Burlington, Ontario",
+      "price": 340,
+      "rating": 4.7,
+      "reviews": 134,
+      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our contemporary lakeshore house just steps from Lake Ontario! This stylish home features open concept design, a chef's kitchen, and private backyard with fire pit.",
+      "aboutHome": {
+        "intro": "Welcome to Modern Lakeshore House, your contemporary retreat in Burlington! Just steps from Lake Ontario, this beautifully designed home offers modern comfort and easy access to downtown Burlington's vibrant dining and shopping scene.",
+        "livingSpace": "The open-concept living space features soaring ceilings, large windows, and sleek contemporary design. A gas fireplace adds warmth while the smart home system controls lighting, temperature, and entertainment. The 60-inch smart TV and sound system create the perfect entertainment hub.",
+        "bedrooms": "With 3 well-appointed bedrooms, this house accommodates up to 5 guests. The master suite features a king bed, walk-in closet, and luxurious ensuite. Two additional bedrooms offer queen and twin beds with quality linens.",
+        "kitchen": "The chef's kitchen is a culinary dream with stainless steel appliances, quartz waterfall island, and professional-grade cookware. Open to the living and dining areas, it's perfect for entertaining while preparing meals.",
+        "outdoor": "The private fenced backyard is your outdoor oasis featuring a stone patio, gas BBQ, fire pit area with Adirondack chairs, and mature trees for privacy. Perfect for summer BBQs or cozy fall evenings.",
+        "location": "Walk to the lakeshore trail for biking, jogging, or sunset strolls. Downtown Burlington's restaurants, shops, and waterfront parks are minutes away. Easy access to highway 403 for exploring the Golden Horseshoe.",
+        "additional": "Smart home features, WiFi throughout, in-suite laundry, and driveway parking make this house perfect for families or groups seeking modern comfort near the lake."
+      },
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Smart home features",
+          "description": "Control lights and temperature"
+        },
+        {
+          "icon": "checkin",
+          "title": "Keyless entry",
+          "description": "Smart lock system"
+        },
+        {
+          "icon": "cancel",
+          "title": "Free cancellation",
+          "description": "48 hours before"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Washer/Dryer",
+        "Fire Pit",
+        "BBQ",
+        "Smart Home",
+        "Air conditioning",
+        "Heating",
+        "Dishwasher",
+        "Coffee Maker",
+        "Patio",
+        "Parking",
+        "Smart TV",
+        "Sound system",
+        "Backyard",
+        "Iron",
+        "Hair dryer"
+      ],
+      "host": {
+        "name": "Jessica Martinez",
+        "joinedDate": "Joined in September 2021",
+        "superhost": false,
+        "initial": "J"
+      },
+      "guests": 5,
+      "bedrooms": 3,
+      "beds": 3,
+      "baths": 2,
+      "weather": {
+        "temp": "20°C",
+        "condition": "Partly cloudy",
+        "icon": "⛅"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Executive Suite at CN Tower",
+      "location": "Toronto, Ontario",
+      "price": 475,
+      "rating": 4.9,
+      "reviews": 198,
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our premium executive suite with stunning views of CN Tower and the Toronto skyline! Walking distance to Rogers Centre, Scotiabank Arena, and the entertainment district.",
+      "aboutHome": {
+        "intro": "Welcome to Executive Suite at CN Tower, your luxury downtown base in the heart of Toronto's entertainment district! This premium suite offers unobstructed views of the iconic CN Tower and city skyline from your private balcony.",
+        "livingSpace": "The sophisticated living space features floor-to-ceiling windows, designer furnishings, and a modern aesthetic. A comfortable sofa bed provides additional sleeping space, while the 55-inch smart TV with premium channels ensures entertainment. The dedicated workspace with ergonomic chair is perfect for business travelers.",
+        "bedrooms": "The elegant bedroom features a plush king bed with premium linens, blackout curtains, and a walk-in closet. Wake up to breathtaking city views through the large windows.",
+        "kitchen": "The sleek kitchenette includes a mini-fridge, microwave, coffee maker, and basic amenities for light meal prep. With countless restaurants downstairs and nearby, dining options are endless.",
+        "building": "The building features 24/7 doorman service, fitness center, and secure underground parking. Located in the epicenter of Toronto's action - walk to Rogers Centre for Blue Jays games, Scotiabank Arena for Raptors and concerts, Ripley's Aquarium, and hundreds of restaurants and bars.",
+        "location": "You're in the heart of everything! CN Tower, Harbourfront, Financial District, and Union Station are all within walking distance. Experience Toronto at its finest from this prime location.",
+        "additional": "Perfect for business travelers, sports fans, concert-goers, or anyone wanting to be in the center of Toronto's energy. High-speed WiFi, workspace, and modern amenities ensure productivity and comfort."
+      },
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Dedicated workspace",
+          "description": "Desk and ergonomic chair"
+        },
+        {
+          "icon": "checkin",
+          "title": "24/7 doorman",
+          "description": "Assisted check-in anytime"
+        },
+        {
+          "icon": "cancel",
+          "title": "Business-friendly",
+          "description": "Flexible cancellation"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Gym",
+        "Doorman",
+        "City View",
+        "Smart TV",
+        "Workspace",
+        "Air conditioning",
+        "Heating",
+        "Coffee Maker",
+        "Elevator",
+        "Parking",
+        "Iron",
+        "Hair dryer",
+        "Balcony",
+        "CN Tower view",
+        "Premium location"
+      ],
+      "host": {
+        "name": "Kevin Nguyen",
+        "joinedDate": "Joined in July 2021",
+        "superhost": true,
+        "initial": "K"
+      },
+      "guests": 3,
+      "bedrooms": 1,
+      "beds": 2,
+      "baths": 1,
+      "weather": {
+        "temp": "18°C",
+        "condition": "Clear",
+        "icon": "🌤️"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Charming Village Home",
+      "location": "Stratford, Ontario",
+      "price": 185,
+      "rating": 4.8,
+      "reviews": 112,
+      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our beautifully restored Victorian home in Stratford's theatre district! Walk to world-class performances at the Stratford Festival, fine dining restaurants, and scenic riverside parks.",
+      "aboutHome": {
+        "intro": "Welcome to Charming Village Home, your elegant retreat in the heart of Stratford's theatre district! This beautifully restored Victorian home combines period charm with modern comfort, putting you steps from the renowned Stratford Festival and downtown attractions.",
+        "livingSpace": "The gracious living room features original hardwood floors, crown molding, and a decorative fireplace that showcases the home's Victorian heritage. Period-appropriate furnishings blend with modern comfort, creating a cozy atmosphere for relaxing between theatre performances.",
+        "bedrooms": "With 2 comfortable bedrooms, this home accommodates up to 4 guests. The master bedroom features a queen bed and vintage details, while the second bedroom offers two twin beds - perfect for friends or family. Both rooms are decorated with care and attention to period detail.",
+        "kitchen": "The updated kitchen maintains Victorian charm while offering modern conveniences. Enjoy breakfast at the antique dining table before heading out to explore the village, or prepare dinner with local ingredients from nearby markets.",
+        "garden": "The private garden is a peaceful oasis with mature trees, flower beds, and seating areas. Enjoy your morning coffee or evening wine in this tranquil outdoor space.",
+        "location": "Walk to the Stratford Festival theatres for world-class performances, explore downtown's boutiques and galleries, dine at exceptional restaurants, or stroll along the beautiful Avon River. The train station is nearby for easy access from Toronto.",
+        "additional": "Perfect for theatre lovers, this home offers a authentic Stratford experience. WiFi keeps you connected while the charming atmosphere transports you to another era. Free street parking available."
+      },
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Theatre district location",
+          "description": "Walk to all Stratford Festival venues"
+        },
+        {
+          "icon": "checkin",
+          "title": "Self check-in",
+          "description": "Lockbox entry"
+        },
+        {
+          "icon": "cancel",
+          "title": "Free cancellation",
+          "description": "Cancel anytime"
+        }
+      ],
+      "amenities": [
+        "WiFi",
+        "Kitchen",
+        "Garden",
+        "Free Parking",
+        "Fireplace",
+        "Coffee Maker",
+        "Heating",
+        "Hot water",
+        "Shampoo",
+        "Iron",
+        "Hair dryer",
+        "Towels",
+        "Bed linens",
+        "Patio",
+        "Books",
+        "Board games"
+      ],
+      "host": {
+        "name": "Patricia O'Connor",
+        "joinedDate": "Joined in October 2018",
+        "superhost": true,
+        "initial": "P"
+      },
+      "guests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "baths": 1,
+      "weather": {
+        "temp": "19°C",
+        "condition": "Partly cloudy",
+        "icon": "⛅"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Tranquil Forest Cabin",
+      "location": "Algonquin Park, Ontario",
+      "price": 145,
+      "rating": 4.6,
+      "reviews": 89,
+      "image": "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=800&h=600&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&h=600&fit=crop"
+      ],
+      "shortDescription": "Welcome to our off-grid cabin deep in Algonquin Park wilderness! Solar-powered with wood stove heating and direct lake access. Perfect for disconnecting and reconnecting with nature.",
+      "aboutHome": {
+        "intro": "Welcome to Tranquil Forest Cabin, your wilderness escape in the heart of Algonquin Park! This off-grid cabin offers a true back-to-nature experience where you can disconnect from technology and reconnect with the wild beauty of Ontario's iconic park.",
+        "livingSpace": "The cozy cabin features rustic wood interiors, a wood-burning stove for warmth, and large windows overlooking the forest and lake. Solar-powered lights provide evening illumination while maintaining the peaceful, off-grid atmosphere. Simple furnishings and a reading nook create a comfortable retreat.",
+        "bedrooms": "With 2 simple bedrooms, this cabin accommodates up to 4 guests. Each room has comfortable beds with warm quilts - perfect for crisp wilderness nights. Fall asleep to the sounds of loons and waves lapping the shore.",
+        "kitchen": "The basic kitchen is equipped with a propane stove, cooler for food storage, and essential cookware for preparing simple meals. A screened porch with picnic table is perfect for outdoor dining with forest views.",
+        "outdoor": "Direct lake access from your private dock offers swimming, canoeing (canoe provided), and fishing opportunities. The fire pit area is perfect for evening campfires, stargazing, and roasting marshmallows. Explore hiking trails directly from the property.",
+        "wildlife": "Algonquin Park is home to moose, deer, beavers, otters, and hundreds of bird species. Wake up to birdsong, watch for wildlife from the cabin, and experience nature at its finest. This is a true wilderness experience.",
+        "additional": "No WiFi or cell service - this is a complete digital detox. Bring supplies from nearby towns. Perfect for nature lovers, adventurers, and anyone seeking solitude in the wilderness. Embrace the simplicity and peace of off-grid living."
+      },
+      "features": [
+        {
+          "icon": "workspace",
+          "title": "Off-grid experience",
+          "description": "Solar power and wood heat"
+        },
+        {
+          "icon": "checkin",
+          "title": "Key pickup",
+          "description": "Instructions provided"
+        },
+        {
+          "icon": "cancel",
+          "title": "Free cancellation",
+          "description": "Weather-dependent flexibility"
+        }
+      ],
+      "amenities": [
+        "Lake Access",
+        "Fireplace",
+        "Canoe",
+        "Fire Pit",
+        "Wildlife Viewing",
+        "Hiking trails",
+        "Fishing",
+        "Swimming",
+        "Propane stove",
+        "Solar lights",
+        "Outhouse",
+        "Cooler",
+        "Basic cookware",
+        "Screened porch",
+        "Private dock",
+        "Wilderness setting"
+      ],
+      "host": {
+        "name": "Mark Stevens",
+        "joinedDate": "Joined in May 2019",
+        "superhost": false,
+        "initial": "M"
+      },
+      "guests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "baths": 1,
+      "weather": {
+        "temp": "16°C",
+        "condition": "Partly cloudy",
+        "icon": "🌤️"
+      }
     }
   ]
 }

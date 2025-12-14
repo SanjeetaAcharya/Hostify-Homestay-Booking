@@ -8,7 +8,6 @@ export default function SearchBar() {
   
   return (
     <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-2 flex items-stretch gap-2 w-full">
-      {/* Accommodation Box - Larger */}
       <div className="flex-[2] bg-white rounded-md px-5 py-3 flex items-center justify-between gap-3 shadow-sm">
         <div className="flex-1">
           <label className="block text-xs font-semibold text-gray-900 mb-1">
@@ -27,7 +26,6 @@ export default function SearchBar() {
         </svg>
       </div>
       
-      {/* Check-in Box */}
       <div className="flex-1 bg-white rounded-md px-5 py-3 flex items-center justify-between gap-3 shadow-sm">
         <div className="flex-1">
           <label className="block text-xs font-semibold text-gray-900 mb-1">
@@ -50,7 +48,6 @@ export default function SearchBar() {
         </svg>
       </div>
       
-      {/* Check-out Box */}
       <div className="flex-1 bg-white rounded-md px-5 py-3 flex items-center justify-between gap-3 shadow-sm">
         <div className="flex-1">
           <label className="block text-xs font-semibold text-gray-900 mb-1">
@@ -73,7 +70,6 @@ export default function SearchBar() {
         </svg>
       </div>
       
-      {/* Guest Box */}
       <div className="flex-1 bg-white rounded-md px-5 py-3 flex items-center justify-between gap-3 shadow-sm">
         <div className="flex-1">
           <label className="block text-xs font-semibold text-gray-900 mb-1">
@@ -93,7 +89,6 @@ export default function SearchBar() {
         </svg>
       </div>
       
-      {/* Search Button */}
       <button 
         className="text-white px-10 rounded-md font-semibold transition-colors flex items-center justify-center gap-2"
         style={{ backgroundColor: '#FF8D28' }}

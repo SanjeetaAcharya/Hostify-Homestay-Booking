@@ -21,14 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <div className="overflow-x-auto">
-          <div style={{ minWidth: '1200px' }}>
-            <Header />
-            <main className="min-h-screen bg-white">
-              {children}
-            </main>
-          </div>
-        </div>
+        <Header />
+        <main className="min-h-screen bg-white">
+          {children}
+        </main>
       </body>
     </html>
   );

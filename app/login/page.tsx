@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/useAuthStore'
@@ -52,8 +53,12 @@ export default function LoginPage() {
           backgroundImage: "url('/images/auth-background.jpg')"
         }}
       >
-        <div className="bg-white rounded-2xl shadow-2xl p-10 max-w-md w-full mx-4 my-8">
-          {/* Logo */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-white rounded-2xl shadow-2xl p-10 max-w-md w-full mx-4 my-8"
+        >
           <div className="flex justify-center mb-6">
             <img 
               src="/images/hostify-logo.png" 
@@ -62,15 +67,12 @@ export default function LoginPage() {
             />
           </div>
           
-          {/* Title */}
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">Sign In</h1>
             <p className="text-gray-600 text-sm">Welcome back! Please sign in to continue</p>
           </div>
           
-          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-5">
-            {/* Email */}
             <div>
               <div className="relative">
                 <input
@@ -96,7 +98,6 @@ export default function LoginPage() {
               )}
             </div>
             
-            {/* Password */}
             <div>
               <div className="relative">
                 <input
@@ -127,7 +128,6 @@ export default function LoginPage() {
               </div>
             </div>
             
-            {/* Submit Button */}
             <button 
               type="submit"
               className="w-full text-white py-3 rounded-lg font-semibold transition-colors hover:opacity-90 mt-6"
@@ -137,7 +137,6 @@ export default function LoginPage() {
             </button>
           </form>
           
-          {/* Divider */}
           <div className="mt-8">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
@@ -149,9 +148,7 @@ export default function LoginPage() {
             </div>
           </div>
           
-          {/* Social Login */}
           <div className="mt-6 flex justify-center gap-6">
-            {/* Google */}
             <button type="button" className="flex flex-col items-center gap-2 hover:opacity-80 transition p-2">
               <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white">
                 <svg className="w-6 h-6" viewBox="0 0 24 24">
@@ -164,7 +161,6 @@ export default function LoginPage() {
               <span className="text-xs text-gray-700">Google</span>
             </button>
             
-            {/* Facebook */}
             <button type="button" className="flex flex-col items-center gap-2 hover:opacity-80 transition p-2">
               <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1877F2' }}>
                 <svg className="w-6 h-6" fill="white" viewBox="0 0 24 24">
@@ -174,7 +170,6 @@ export default function LoginPage() {
               <span className="text-xs text-gray-700">Facebook</span>
             </button>
             
-            {/* Apple */}
             <button type="button" className="flex flex-col items-center gap-2 hover:opacity-80 transition p-2">
               <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white">
                 <svg className="w-6 h-6" fill="black" viewBox="0 0 24 24">
@@ -185,14 +180,13 @@ export default function LoginPage() {
             </button>
           </div>
           
-          {/* Sign Up Link */}
           <p className="text-center mt-8 text-gray-600 text-sm">
             Don't have an account yet?{' '}
             <Link href="/signup" className="font-semibold hover:underline" style={{ color: '#FF8D28' }}>
               Sign up
             </Link>
           </p>
-        </div>
+        </motion.div>
       </div>
       
       <Footer />
