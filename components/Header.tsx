@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect } from 'react'
 import Link from 'next/link'
 import { Moon, Sun } from 'lucide-react'
 import { useAuthStore } from '@/store/useAuthStore'
@@ -7,7 +8,12 @@ import { useThemeStore } from '@/store/useThemeStore'
 
 export default function Header() {
   const { isLoggedIn, user, logout } = useAuthStore()
-  const { isDark, toggleTheme } = useThemeStore()
+  const { isDark, toggleTheme, initTheme } = useThemeStore()
+  
+  // Initialize theme on component mount
+  useEffect(() => {
+    initTheme()
+  }, [initTheme])
   
   return (
     <header className="border-b border-gray-200 bg-white sticky top-0 z-50">

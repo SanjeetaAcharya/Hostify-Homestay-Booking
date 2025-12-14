@@ -13,16 +13,26 @@ export default function HomePage() {
   const [selectedFilter, setSelectedFilter] = useState('default')
   const [showMoreHovered, setShowMoreHovered] = useState(false)
   const [showFilterMenu, setShowFilterMenu] = useState(false)
-  const { location, setLocation } = useSearchStore()
+  const { location, checkIn, checkOut, guests } = useSearchStore()
   const properties = propertiesData.properties
   
   const locations = Array.from(new Set(properties.map(p => p.location)))
   
+  // Enhanced filtering logic
   const filteredProperties = properties
     .filter(property => {
+      // Location filter
       if (location && location !== 'All Locations') {
-        return property.location === location
+        if (!property.location.toLowerCase().includes(location.toLowerCase())) {
+          return false
+        }
       }
+      
+      // Guest filter
+      if (guests && property.guests < guests) {
+        return false
+      }
+      
       return true
     })
     .sort((a, b) => {
@@ -36,17 +46,29 @@ export default function HomePage() {
     })
   
   const getFilterText = () => {
-    const locationText = location && location !== 'All Locations' ? location : 'Ontario'
+    const locationText = location || 'Ontario'
     const count = filteredProperties.length
+    
+    let text = `${count} ${count === 1 ? 'property' : 'properties'}`
+    
+    if (location) {
+      text += ` in ${locationText}`
+    }
+    
+    if (guests) {
+      text += ` • ${guests} ${guests === 1 ? 'guest' : 'guests'}`
+    }
     
     switch(selectedFilter) {
       case 'low-to-high':
-        return `${count} properties in ${locationText} • Price: Low to High`
+        text += ' • Price: Low to High'
+        break
       case 'high-to-low':
-        return `${count} properties in ${locationText} • Price: High to Low`
-      default:
-        return `Discover ${count} amazing stays in ${locationText}`
+        text += ' • Price: High to Low'
+        break
     }
+    
+    return text
   }
   
   return (
@@ -105,9 +127,9 @@ export default function HomePage() {
               </p>
               <div className="flex items-center gap-2 mt-1 flex-wrap">
                 <button
-                  onClick={() => setLocation('All Locations')}
+                  onClick={() => useSearchStore.setState({ location: '' })}
                   className={`text-xs sm:text-sm px-3 py-1 rounded-full transition ${
-                    !location || location === 'All Locations'
+                    !location
                       ? 'bg-orange-100 text-orange-700 font-medium'
                       : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
@@ -117,7 +139,7 @@ export default function HomePage() {
                 {locations.slice(0, 3).map((loc) => (
                   <button
                     key={loc}
-                    onClick={() => setLocation(loc)}
+                    onClick={() => useSearchStore.setState({ location: loc })}
                     className={`text-xs sm:text-sm px-3 py-1 rounded-full transition ${
                       location === loc
                         ? 'bg-orange-100 text-orange-700 font-medium'
@@ -241,9 +263,20 @@ export default function HomePage() {
         </motion.div>
         
         {filteredProperties.length === 0 ? (
-          <p className="text-gray-500 text-center py-12">
-            No properties found for this filter.
-          </p>
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg mb-4">
+              No properties found matching your search criteria.
+            </p>
+            <button
+              onClick={() => {
+                useSearchStore.setState({ location: '', checkIn: '', checkOut: '', guests: 1 })
+                setSelectedFilter('default')
+              }}
+              className="px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition"
+            >
+              Clear All Filters
+            </button>
+          </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {filteredProperties.map((property, index) => (

@@ -103,40 +103,49 @@ export default function PropertyDetailsPage() {
         transition={{ duration: 0.5 }}
         className="container mx-auto px-4 sm:px-6 py-4 sm:py-8"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mb-8">
+        {/* Gallery and Booking Card Section - Fixed Height */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 mb-8">
+          {/* Image Gallery - 2 columns on large screens */}
           <div className="lg:col-span-2">
             <motion.div 
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
+              className="h-full"
             >
-              <div className="relative rounded-t-2xl overflow-hidden h-[250px] sm:h-[400px] mb-2">
-                <img 
-                  src={property.image} 
-                  alt={property.name}
-                  className="w-full h-full object-cover"
-                  loading="eager"
-                />
-              </div>
-              
-              <div className="grid grid-cols-5 gap-2">
-                {property.images.slice(0, 4).map((img, index) => (
-                  <div key={index} className={`relative overflow-hidden h-[80px] sm:h-[100px] ${index === 0 ? 'rounded-bl-2xl' : ''}`}>
-                    <img 
-                      src={img} 
-                      alt={`${property.name} ${index + 1}`}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
+              {/* Main image and thumbnail grid with fixed total height */}
+              <div className="flex flex-col h-[600px]">
+                {/* Main Image - Takes up most of the height */}
+                <div className="relative rounded-t-2xl overflow-hidden flex-1 mb-2">
+                  <img 
+                    src={property.image} 
+                    alt={property.name}
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                  />
+                </div>
+                
+                {/* Thumbnail Grid - Fixed height */}
+                <div className="grid grid-cols-5 gap-2 h-[120px]">
+                  {property.images.slice(0, 4).map((img, index) => (
+                    <div key={index} className={`relative overflow-hidden h-full ${index === 0 ? 'rounded-bl-2xl' : ''}`}>
+                      <img 
+                        src={img} 
+                        alt={`${property.name} ${index + 1}`}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                  <div className="relative overflow-hidden h-full rounded-br-2xl bg-gray-900 flex items-center justify-center cursor-pointer hover:bg-gray-800 transition">
+                    <span className="text-white font-bold text-base">360</span>
                   </div>
-                ))}
-                <div className="relative overflow-hidden h-[80px] sm:h-[100px] rounded-br-2xl bg-gray-900 flex items-center justify-center cursor-pointer hover:bg-gray-800 transition">
-                  <span className="text-white font-bold text-sm sm:text-base">360</span>
                 </div>
               </div>
             </motion.div>
           </div>
           
+          {/* Booking Card - 1 column, matches gallery height */}
           <div className="lg:col-span-1">
             <motion.div 
               initial={{ x: 20, opacity: 0 }}
@@ -144,7 +153,7 @@ export default function PropertyDetailsPage() {
               transition={{ delay: 0.3 }}
               className="lg:sticky lg:top-8"
             >
-              <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm h-full flex flex-col">
+              <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm h-[600px] flex flex-col">
                 <div className="mb-4">
                   <div className="flex justify-between items-start mb-2">
                     <h1 className="text-3xl font-bold text-gray-900">{property.name}</h1>
