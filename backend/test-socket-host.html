@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket Test</title>
+  </head>
+  <body>
+    <h3>Socket.io Test</h3>
+    <input
+      id="conversationId"
+      placeholder="Conversation ID"
+      style="width: 300px"
+    />
+    <button onclick="join()">Join</button><br /><br />
+    <input id="messageText" placeholder="Message text" style="width: 300px" />
+    <button onclick="send()">Send</button>
+    <pre id="log"></pre>
+
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+    <script>
+      const TOKEN =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNGRkNDJmMWFkNGUxMGU5N2YxZGJhOSIsImlhdCI6MTc4MzQ5OTMxNiwiZXhwIjoxNzg0MTA0MTE2fQ.NQUn3nm3gO8XPUASvTI1MN7H4LMx0FDhxzsG4Vi2_eo";
+      const socket = io("http://localhost:5000", { auth: { token: TOKEN } });
+
+      const log = (msg) => {
+        document.getElementById("log").textContent += msg + "\n";
+      };
+
+      socket.on("connect", () => log("Connected: " + socket.id));
+      socket.on("connect_error", (err) => log("Connect error: " + err.message));
+      socket.on("newMessage", (msg) =>
+        log("New message: " + JSON.stringify(msg)),
+      );
+      socket.on("userTyping", (userId) => log(userId + " is typing..."));
+
+      function join() {
+        const id = document.getElementById("conversationId").value;
+        socket.emit("joinConversation", id);
+        log("Joined conversation: " + id);
+      }
+
+      function send() {
+        const id = document.getElementById("conversationId").value;
+        const text = document.getElementById("messageText").value;
+        socket.emit("sendMessage", { conversationId: id, text });
+        log("Sent: " + text);
+      }
+    </script>
+  </body>
+</html>
